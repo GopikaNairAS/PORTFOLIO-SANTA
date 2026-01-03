@@ -1,0 +1,264 @@
+.Heehee{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+
+    font-family: "Great Vibes", cursive;
+    position: fixed;
+    top: 150px;
+    left: 50px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.Heehee h1,
+.Heehee h2 {
+    margin: 0;
+    line-height: 1;
+}
+
+.Heehee h1 {
+    font-size: 100px;
+}
+
+.Heehee h2 {
+    font-size: 40px;
+    text-align: justify;
+}
+body{
+    background-image: url("Santa.jpg");
+
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.options > * {
+    background-color: #f7f7f7; 
+    color: #111;               
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family:"Cookie",cursive;
+}
+
+.options{
+    font-family: "Cookie", cursive;
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    color: offwhite;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    text-shadow: 2px 2px 4px #000000;
+    gap: 60px;
+    display: flex;
+    font-size:25px;
+}
+
+.about{
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Vidaloka", cursive;
+    position:relative;
+    overflow:hidden;
+}
+
+.about::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("santaaa.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    will-change: opacity, transform;
+    animation: bgFadeIn 2s ease-in forwards;
+}
+
+@keyframes bgFadeIn {
+    from { opacity: 0; transform: scale(1.02); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+
+.atext{
+    max-width: 700px;
+    margin: 10px 10px;   /* top/bottom and horizontal spacing */
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.3;
+    color: black;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 700px;
+}
+
+.atext h1{
+    
+    font-family: "Rouge Script";
+    font-size: 35px;
+    
+}
+
+.ch{
+    background-image: none;
+    font-size: 25px;
+    margin-right: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Libre Caslon Display",static;
+    overflow:hidden;
+}
+
+.ch::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("SSSanta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    will-change: opacity, transform;
+    animation: bgFadeIn 2s ease-in forwards;
+}
+
+.add{
+    background-image: none;
+    font-size: 25px;
+    margin-right: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Libre Caslon Display",static;
+    overflow:hidden;
+    margin-right:0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.add::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("Santa Clause.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    will-change: opacity, transform;
+    animation: bgFadeIn 1.5s ease-in forwards;
+}
+
+.addtext{
+    color:white;
+    padding:10px;
+}
+
+@media (max-width: 900px) {
+  .addtext {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+}
+
+.optionss > * {
+                   
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family:"Cookie",cursive;
+    margin-left:0;
+}
+
+.optionss{
+    font-family: "Cookie", cursive;
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    opacity: 0;
+    animation: fadeIn 2.0s ease-in forwards;
+    text-shadow: 2px 2px 4px #000000;
+    gap: 60px;
+    display: flex;
+    font-size:30px;
+}
+
+
+.optionss {
+  position: fixed ;
+  top: 16px ;
+  right: 20px ;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 8px ;
+  font-size: 40px;
+
+}
+
+.optionss > a {
+  display: inline-block !important;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+body.add .optionss > a { color: #fff; }
+body.about .optionss > a { color: #000; }
+.Ch + .optionss > a    { color: #000; }
+
+
+@media (max-width: 600px) {
+  .optionss { right: 10px; top: 10px; }
+  .optionss > a { padding: 6px 10px; font-size: 16px; }
+}
+
+.Ch h1,
+.Ch p {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: ch-fade-up 600ms cubic-bezier(.22,.9,.35,1) forwards;
+}
+
+
+.Ch h1                    { animation-delay: 1.2s; }
+.Ch p:nth-of-type(1)      { animation-delay: 1.6s; }
+.Ch p:nth-of-type(2)      { animation-delay: 2.0s; }
+
+@keyframes ch-fade-up {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.optionss a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body.add .optionss a { color: #fff; }
+
+
+body.about .optionss a { color: #000 ;}
+
+
+.Ch + .optionss a { color: #000; }

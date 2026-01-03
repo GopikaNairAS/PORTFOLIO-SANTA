@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>SANTA-About Me</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    </head>
+    <body class="about">
+        <div class="atext">
+            <h1><u>About Me</u></h1>
+            <p>I am Santa Clause,a generous old personality who has
+               dedicated life for philanthropy.
+               Before taking on this name, I was known as Saint Nicholas, a Christian Bishop 
+               who served in 4th Century. 
+            </p>
+            <h2>PERSONAL DETAILS</h2>
+            <ul>
+                <li><strong>Name:</strong><span data-key="name"></span></li>
+                <li><strong>Also Known as:</strong><span data-key="aka"></span></li>
+                <li><strong>Place:</strong><span data-key="place"></span></li>
+                <li><strong>Favorite Food:</strong><span data-key="food"></span></li>
+            </ul>
+            <h2>SKILLS</h2>
+            <ul>
+                <li>Perfect Gift Wrapping</li>
+                <li>Accurate and Fast Delivery of Gifts</li>
+                <li>Expert in driving Reindeer Sleigh</li>
+                <li>Great in Adapting to Different Climatic Conditions especially Cold climate</li>
+                <li>Time Management</li>
+                <li>Teamwork with Elves</li>
+            </ul>
+            <h2>CONTACT DETAILS</h2>
+            <ul>
+                <li>Address:Santa 123 Elf Road, North Pole, 88888</li>
+            </ul>
+        
+        </div>
+        <script class="atext">
+            const data = {
+                name: "Santa Clause",
+                aka: "Saint Nicholas, Kris Kringle,Christmas Father",
+                place: "North Pole",
+                food:"Cookies and Milk"
+            };
+
+            document.querySelectorAll('span[data-key]').forEach(span => {
+                const key = span.getAttribute('data-key');
+                if (data[key]) {
+                    span.textContent = data[key];
+                }
+            });
+            
+        </script>
+        
+
+        <div class="optionss">
+        <a href="santa.html"><u>Home</u></a></div>
+    </body>
+</html>
